@@ -136,7 +136,7 @@ image::./resources/lifecycle.png[lifecycle]
 
 * To see the history of a repo:
 ** `git log`
-** `git lop -n <number>`
+** `git log -n <number>`
 ** `git log --stat`
 ** `git log --pretty=oneline`
 
@@ -153,7 +153,7 @@ image::./resources/lifecycle.png[lifecycle]
 
 == Example I
 
-1. Create a new repo.
+1. Create a new repository
 2. Add some files
 3. Stage them
 4. Modify one file
@@ -161,10 +161,8 @@ image::./resources/lifecycle.png[lifecycle]
 6. Commit changes
 7. Repeat the process for other files
 8. Go back to a previous state.
-9. Inspect the directory.
-10. What files did git added?
-** .gitignore
-** ./git
+9. Inspect the directory
+** Which files were added by git?
 
 
 == Branchhing
@@ -194,8 +192,9 @@ image::resources/branching.jpg[branching]
 * To delete a branch:
 ** `git branch -d <branch_name>`
 
-* To merge branches:
-** `git merge <branch_a> <branch_b>`
+* To merge branches into the master:
+** `git checkout master`
+** `git merge <branch_a>`
 
 == Problems with branches
 
@@ -212,42 +211,50 @@ So we are responsible to merge those conflicts manually by editing the files sho
 
 == EXAMPLE II
 
-* New branch
-** Navigate between branches and see state of both
-* Make modifications in the branch and in the master
-** Merge branch into master
-* Generate a conflict
-** Solve it
+* Create a new branch
+* Create a new file in this branch
+** Add some content
+** Commit it
+* Navigate between branches and see the state of both from your text editor
+* Generate a conflict by modifying the same file in both branches
+* Merge branch into master
 
 == Working with remote repositories
 
-description
+* A remote URL is Git's fancy way of saying "the place where your code is stored." 
+* That URL is going to be our repository on GitHub, but it could be another user's fork, or even on a completely different server.
+* Two types of URL addresses:
+**   An HTTPS URL like ``https://github.com/user/repo.git``
+**   An SSH URL, like ``git@github.com:user/repo.git``
+
+Git associates a remote URL with a name, and your default remote is usually called `origin`.
+
+== Origin
+
+* By convention the name it recives the new remote repository(GitHub).
+* It could be multimple remote repositories.
+
+When cloning a repository for the first time:
+
+* It is the default name given to the original remote repository that you clone. It is where you want to pull and push changes.
+
 
 == Operations
 
+* To add a remote:
+** `git remote add origin https://github.com/yhabib/gitTest.git`
+
 * To send these canges to your remote repository:
-** `git push origin master`
+** `git push -u origin master`
 
 * or to a particular branch:
 ** `git push origin branch_name`
 
-== Origin
+* Working with A branch is not available to others unless you push the branch to your remote repository
 
-When creating a new repository:
-
-* By convention the name it recives the new remote repository(GitHub).
-* No requirement to name the remote repository this way.
-* It could be multimple remote repositories.
-
-When cloning a repo for the first time:
-
-* It is the default name fiven to the original remote repository that you clone. It is where
-you want to pull and push changes.
-
-
-== Branching
-A branch is not available to others unless you push the branch to your remote repository
 * `git push origin branch_name`
+
+The same to 
 
 == EXAMPLE III
 
