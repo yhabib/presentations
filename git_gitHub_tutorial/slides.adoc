@@ -244,29 +244,42 @@ When cloning a repository for the first time:
 * To add a remote:
 ** `git remote add origin https://github.com/yhabib/gitTest.git`
 
-* To send these canges to your remote repository:
+* To send local changes from master to the remote:
 ** `git push -u origin master`
 
-* or to a particular branch:
-** `git push origin branch_name`
+* or from a particular branch:
+** `git push origin <branch_name>`
 
-* Working with A branch is not available to others unless you push the branch to your remote repository
+* To fetch remote changes:
+** `git pull`
 
-* `git push origin branch_name`
+* For a remote branch we first need to check it:
 
-The same to 
+** `git fetch`
+** `git checkout <branch_name>`
 
-== EXAMPLE III
+== Markdown
 
-== GitHub
+* Adding `readme.md` files in a repository makes them look more profesional
+* Markup lenguage used by GitHub
+* Very easy to learn and use
+* https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet[Cheatsheet]
 
+== EXERCISE III
 
-== EXAMPLE IV
-
-== GitHub Pages
-== Project
+* Create a new repository in GitHub
+* Push your local repo to this remote
+* Push as well branches
+* Create a readme.md
+** With title and a list of elements
+* Check all the information that GitHub offers about the repository
 
 == Personal recommendation
-
-* Visual Studio code
+* How to organize Propulsion Academy code
+* GitPages, easy way to create a web page for you or your page
+** https://mapageka21.github.io/[Personal Page]
+** https://yhabib.github.io/JavaScript30/[Project Page]
+* GitHub daily contributions
+** Important for job searching
+* https://code.visualstudio.com/[Visual Studio Code]
 
