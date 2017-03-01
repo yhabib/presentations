@@ -1,9 +1,6 @@
-include::../_settings_deck.adoc[]
-// include::../../_settings_reveal.adoc[]
+# Git and GitHub
 
-= Git and GitHub
-
-== Problems we face as a software developers
+## Problems we face as a software developers
 
 * How can we manage a large project, when we want to have backups of it at different states?
 * Do we save out a copy of the whole project every time we need a backup?
@@ -14,7 +11,6 @@ include::../_settings_deck.adoc[]
 * how can we allow for more than one developer to work in the same file?
 * how can we track what changes have done everyone?
 
--
 
 ## Version Control Systems (VCS)
 
@@ -34,7 +30,6 @@ It allows to:
   * Trace each change made to the software by each contributor
   * Connect it to project management and bug tracking software such [JIRA]().
 
-------------------------------------
 
 Different flavors:
   * Non-Existing
@@ -47,7 +42,6 @@ Different flavors:
 
 It means that if you screw things up or lose files, you can easily recover them.
 
-------------------------------------
 
 ## Git
 ### What is git?
@@ -64,7 +58,6 @@ In addition to being distributed, Git has been designed with performance, securi
 * Snapshots, not diffs
 * It is distributed not centralized
 
-------------------------------------
 
 ### Installing Git
 * **Windows**: [https://git-scm.com/download/win](https://git-scm.com/download/win)
@@ -92,7 +85,6 @@ Then we check the installation by checking git's version: `$ git --version`.
   ```bash
   git config --list
   ```
-------------------------------------
 
 ### Git workflow
 In a Git repository your files can be in one of these three states:
@@ -127,7 +119,7 @@ In a Git repository your files can be in one of these three states:
 * or return to current state:
   * `git checkout master`
 
-------------------------------------
+
 
 ### Example
 1. Create a new repo.
@@ -140,7 +132,7 @@ In a Git repository your files can be in one of these three states:
 8. Go back to a previous state.
 9. Inspect the directory.
 
-------------------------------------
+
 
 ### Branchhing
 Branches are used to develop features isolated from each other:
@@ -149,7 +141,7 @@ Branches are used to develop features isolated from each other:
 
 ![branching](./resources/branching.jpg)
 
-------------------------------------
+
 
 #### Operations
 * To list all branches:
@@ -165,7 +157,7 @@ Branches are used to develop features isolated from each other:
 * To merge branches:
   * `git merge <branch_a> <branch_b>`
 
-------------------------------------
+
 
 #### Problems
 Sometimes auto-merge is not possible and results *conflicts*. So we are responsible to 
@@ -173,7 +165,7 @@ merge those conflicts amnally by editing the files shown by git.
 * Editor of choice
 * **Tip**: Before mergin changes, preview changes.
 
-------------------------------------
+
 
 ### EXAMPLE 2
 * Continuation:
@@ -181,7 +173,7 @@ merge those conflicts amnally by editing the files shown by git.
   * Commit there
 * Generate 
 
-------------------------------------
+
 
 ### Working with remote repositories
 #### Operations
@@ -190,7 +182,6 @@ merge those conflicts amnally by editing the files shown by git.
 * or to a particular branch:
   * `git push origin branch_name`
 
-------------------------------------
 
 #### Origin
 
@@ -203,24 +194,17 @@ When cloning a repo for the first time:
 * It is the default name fiven to the original remote repository that you clone. It is where
 you want to pull and push changes.
 
-------------------------------------
 
 #### Branching
 A branch is not available to others unless you push the branch to your remote repository
 * `git push origin branch_name`
 
-------------------------------------
-
 ## GitHub
-
-------------------------------------
-
 
 ### Tools that make it easier
 * Visual Studio code
 * Git Desktop
 ...
-
 
 ## BACKLOG:
 * .gitignore
