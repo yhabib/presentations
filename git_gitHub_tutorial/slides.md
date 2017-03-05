@@ -1,7 +1,6 @@
 # Git and GitHub
-
+---
 ## Problems we face as a software developers
-
 * How can we manage a large project, when we want to have backups of it at different states?
 * Do we save out a copy of the whole project every time we need a backup?
 * So everytime we solve a problem in our application, do we make a copy to not break everything with the 
@@ -11,6 +10,7 @@
 * how can we allow for more than one developer to work in the same file?
 * how can we track what changes have done everyone?
 
+---
 
 ## Version Control Systems (VCS)
 
@@ -42,6 +42,7 @@ Different flavors:
 
 It means that if you screw things up or lose files, you can easily recover them.
 
+---
 
 ## Git
 ### What is git?
@@ -52,16 +53,21 @@ Rather than having only one single place for the full version history of the sof
 the code is also a repository that can contain the full history of all changes.
 In addition to being distributed, Git has been designed with performance, security and flexibility in mind.
 
+---
+
 ### Strong points of Git 
 * Everything is local
 * Is really fast
 * Snapshots, not diffs
 * It is distributed not centralized
 
+---
 
 ### Installing Git
 * **Windows**: [https://git-scm.com/download/win](https://git-scm.com/download/win)
 * **Mac**: [https://git-scm.com/download/mac](https://git-scm.com/download/mac)
+
+---
 
 Then we check the installation by checking git's version: `$ git --version`.
 
@@ -85,6 +91,7 @@ Then we check the installation by checking git's version: `$ git --version`.
   ```bash
   git config --list
   ```
+---
 
 ### Git workflow
 In a Git repository your files can be in one of these three states:
@@ -93,6 +100,8 @@ In a Git repository your files can be in one of these three states:
 * Commited: You do a commit that stores snapshot permanently to your GIt directory
 
 ![lifecycle](./resources/lifecycle.png)
+
+---
 
 ### Git basic operations
 * To create a new Git project:
@@ -119,7 +128,7 @@ In a Git repository your files can be in one of these three states:
 * or return to current state:
   * `git checkout master`
 
-
+---
 
 ### Example
 1. Create a new repo.
@@ -132,7 +141,7 @@ In a Git repository your files can be in one of these three states:
 8. Go back to a previous state.
 9. Inspect the directory.
 
-
+---
 
 ### Branchhing
 Branches are used to develop features isolated from each other:
@@ -141,7 +150,7 @@ Branches are used to develop features isolated from each other:
 
 ![branching](./resources/branching.jpg)
 
-
+---
 
 #### Operations
 * To list all branches:

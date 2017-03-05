@@ -3,7 +3,7 @@ include::../_settings_deck.adoc[]
 
 = Git and GitHub
 
-== Why?
+== Why Version Controlling?
 
 //* Backups of a project at different states,
 
@@ -151,7 +151,7 @@ image::./resources/lifecycle.png[lifecycle]
 * or return to current state:
 ** `git checkout master`
 
-== Example I
+== Example I: Basic commands in Git
 
 1. Create a new repository
 2. Add some files
@@ -209,7 +209,7 @@ So we are responsible to merge those conflicts manually by editing the files sho
 ** `git diff`
 
 
-== EXAMPLE II
+== EXAMPLE II: Branching in Git
 
 * Create a new branch
 * Create a new file in this branch
@@ -265,7 +265,7 @@ When cloning a repository for the first time:
 * Very easy to learn and use
 * https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet[Cheatsheet]
 
-== EXERCISE III
+== EXERCISE III: Advance Git
 
 * Create a new repository in GitHub
 * Push your local repo to this remote
@@ -274,8 +274,22 @@ When cloning a repository for the first time:
 ** With title and a list of elements
 * Check all the information that GitHub offers about the repository
 
+== Exercise IV: Working on a team
+
+1. Each member in the team should have a GitHub account.
+2. A GitHub repository has to be created by a member of the group.
+3. Inside the repository:
+** Settings
+** Collaborators
+** Add collaborators
+4. Rest in the groud should copy the repository's url and clone into their respective computers.
+5. Start to create ;)
+
 == Personal recommendation
+
 * How to organize Propulsion Academy code
+** Projects based
+** Course based
 * GitPages, easy way to create a web page for you or your page
 ** https://mapageka21.github.io/[Personal Page]
 ** https://yhabib.github.io/JavaScript30/[Project Page]
