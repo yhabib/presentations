@@ -3,7 +3,7 @@ include::../_settings_deck.adoc[]
 
 = Git and GitHub
 
-== Why Version Controlling?
+== Why Git?
 
 //* Backups of a project at different states,
 
@@ -112,7 +112,7 @@ In a Git repository a file can be in one of these three states:
 
 * Modified: When you modify files in your working directory
 * Staged: You stage the files, adding a snapshot of them to the staging area
-* Commited: You do a commit that stores snapshots permanently to your GIt directory
+* Commited: You do a commit that stores snapshots permanently to your Git directory
 
 image::./resources/lifecycle.png[lifecycle]
 
@@ -151,7 +151,7 @@ image::./resources/lifecycle.png[lifecycle]
 * or return to current state:
 ** `git checkout master`
 
-== Example I: Basic commands in Git
+== Exercise I: Basic commands in Git
 
 1. Create a new repository
 2. Add some files
@@ -165,7 +165,7 @@ image::./resources/lifecycle.png[lifecycle]
 ** Which files were added by git?
 
 
-== Branchhing
+== Branching
 Branches are used to develop features isolated from each other:
 
 * The **master** branch is the "default" branch when you create a repository.
@@ -209,7 +209,7 @@ So we are responsible to merge those conflicts manually by editing the files sho
 ** `git diff`
 
 
-== EXAMPLE II: Branching in Git
+== Exercise II: Branching in Git
 
 * Create a new branch
 * Create a new file in this branch
@@ -221,7 +221,7 @@ So we are responsible to merge those conflicts manually by editing the files sho
 
 == Working with remote repositories
 
-* A remote URL is Git's fancy way of saying "the place where your code is stored." 
+* A remote URL is Git's fancy way of saying "the place where your code is stored".
 * That URL is going to be our repository on GitHub, but it could be another user's fork, or even on a completely different server.
 * Two types of URL addresses:
 **   An HTTPS URL like ``https://github.com/user/repo.git``
@@ -265,7 +265,7 @@ When cloning a repository for the first time:
 * Very easy to learn and use
 * https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet[Cheatsheet]
 
-== EXERCISE III: Advance Git
+== Exercise III: Advance Git
 
 * Create a new repository in GitHub
 * Push your local repo to this remote
@@ -282,10 +282,19 @@ When cloning a repository for the first time:
 ** Settings
 ** Collaborators
 ** Add collaborators
-4. Rest in the groud should copy the repository's url and clone into their respective computers.
-5. Start to create ;)
+4. Share url -> slack sub-group
+5. Rest members in the team should clone the repo into their respective machines.
+6. Play modifying files, commiting and pushing. 
 
-== Personal recommendation
+== Feature Branch Workflow
+*  All feature development should take place in a dedicated branch instead of the `master` branch.
+** The `master` branch will never contain broken code
+* `Pull requests` allows to initiate discussions around a branch
+** Code review by team members
+** Easy way for a developer to ask for help
+** Repository owner integrates the branch into the master by accepting the `pull request`.
+
+== Personal recommendations
 
 * How to organize Propulsion Academy code
 ** Projects based
